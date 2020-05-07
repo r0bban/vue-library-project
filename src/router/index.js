@@ -1,12 +1,18 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
+import Bookshelf from '../views/BookShelf.vue'
 
 Vue.use(VueRouter)
 
   const routes = [
+    {
+      path:'/',
+      name: 'Bookshelf',
+      component: Bookshelf
+    },
   {
-    path: '/',
+    path: '/home',
     name: 'Home',
     component: Home
   },
