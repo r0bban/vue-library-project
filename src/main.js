@@ -13,6 +13,12 @@ new Vue({
       booksDB: BooksSourceObject.books
     }
   },
+  methods:{
+    getBook(id){
+      return this.booksDB.find(book => book.id == id)
+    }
+
+  },
 
   router,
   render: h => h(App)

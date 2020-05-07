@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Bookshelf from '../views/BookShelf.vue'
+import SingleBook from '../views/SingleBook.vue'
 
 Vue.use(VueRouter)
 
@@ -10,6 +11,11 @@ Vue.use(VueRouter)
       path:'/',
       name: 'Bookshelf',
       component: Bookshelf
+    },
+    {
+      path:'/book/id=:bookId',
+      name: 'SingleBook',
+      component: SingleBook
     },
   {
     path: '/home',

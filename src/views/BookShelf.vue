@@ -2,20 +2,20 @@
   <section class="bookshelf-container">
     <h1>8 Classic Children books</h1>
     <div class="books-container">
-      <BookThumb
+      <BookCover
         v-for="book in getBooks"
         v-bind:key="book.id"
-        v-bind:id="book.id"
-        v-bind:title="book.title"
-        v-bind:author="book.author"
-        v-bind:color="book.color"
+        v-bind:book="book"
       />
+
+
+
     </div>
   </section>
 </template>
 
 <script>
-import BookThumb from "../components/BookThumb";
+import BookCover from "../components/BookCover";
 
 export default {
   name: "BookShelf",
@@ -28,7 +28,7 @@ export default {
     }
   },
   components: {
-    BookThumb: BookThumb
+    BookCover: BookCover
   }
 };
 </script>
