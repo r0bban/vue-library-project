@@ -42,6 +42,7 @@ h1 {
   font-size: 3rem;
   margin: 5px 0;
   text-align: left;
+  padding-left: 10px;
 }
 div.books-container {
   display: flex;
@@ -50,7 +51,18 @@ div.books-container {
   padding: 0 auto;
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 680px) {
+  div.books-container {
+  display: flex;
+  justify-content: center;
+}
+  h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 475px) {
   h1 {
     font-size: 1.6rem;
   }

@@ -1,6 +1,6 @@
 <template>
   <article
-    class="book-thumb"
+    class="book-cover"
     v-on:click="routeToBook"
     v-bind:style="{'background-image': bgColor}"
   >
@@ -38,7 +38,7 @@ export default {
 </script>
 
 <style>
-article.book-thumb {
+article.book-cover {
   display: flex;
   flex-wrap: nowrap;
   width: 300px;
